@@ -1,7 +1,4 @@
-
-
-
-		<!-- start: page body area -->
+<!-- start: page body area -->
 		<div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
 			<div class="card mb-3">
 				<div class="card-body">
