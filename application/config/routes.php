@@ -11,3 +11,21 @@ $route['manage-tasks'] = 'Home/manage_tasks';
 $route['manage-bidders'] = 'Home/manage_bidders';
 $route['active-bids'] = 'Home/active_bids';
 $route['post-task'] = 'Home/post_task';
+$route['login'] = 'Home/login';
+$route['register'] = 'Home/register';
+$route['notification'] = 'Home/notification';
+$route['wallet'] = 'Home/wallet';
+$route['profile_update'] = 'Home/profile_update';
+$route['posted_task'] = 'Home/posted_task';
+$route['view_posted'] = 'Home/view_posted';
+$route['role_employment'] = 'Home/role_employment';
+
+
+$route['login'] = 'Home/login';
+$route['register'] = 'Home/register';
+$route['notification'] = 'Home/notification';
+$route['wallet'] = 'Home/wallet';
+$route['profile_update'] = 'Home/profile_update';
+$route['posted_task'] = 'Home/posted_task';
+$route['view_posted'] = 'Home/view_posted';
+$route['role_employment'] = 'Home/role_employment';
