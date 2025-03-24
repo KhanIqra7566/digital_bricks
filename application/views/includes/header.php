@@ -388,7 +388,7 @@
 								</a>
 								<ul class="collapse list-unstyled" id="MyProject">
 									<li><a href="<?= base_url('manage_tasks') ?>" aria-label="Analytics">Manage Tasks</a></li>
-									<li><a href="<?= base_url('manage_bids') ?>" aria-label="New Project">Manage Bidders</a></li>
+									<li><a href="<?= base_url('manage_bidders') ?>" aria-label="New Project">Manage Bidders</a></li>
 									<li><a href="<?= base_url('active_bids') ?>" aria-label="Project List">My Active Bids </a></li>
 									<li><a href="<?= base_url('post_task') ?>" aria-label="Project Grid">Post a Task</a></li>
 								</ul>
