@@ -1,14 +1,72 @@
+
 .update-profile {
-    background-color: #2b9bad;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  background-color: #2b9bad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .update-profile:hover {
-    background-color: #237f7c;
+  background-color: #237f7c;
 }
+
+/* Radio Button Style */
+.custom-radio {
+  margin-right: 8px;
+}
+
+/* Label Style */
+.custom-label {
+  color: #495057;
+  font-weight: 300;
+}
+
+.custom-upload-btn {
+    background-color: #2b9bad; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.custom-upload-btn:hover {
+    background-color: #05212e; /* Darker shade of Bootstrap Primary Color */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Focus Effect */
+.custom-upload-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.custom-post-task-btn {
+    background-color: white; /* Bootstrap Primary Color */
+    color: #2b9bad;
+    padding: 8px 16px;
+    border-color: #2b9bad;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+/* Hover Effect */
+.custom-post-task-btn:hover {
+    background-color: #2b9bad;
+    color: aliceblue;
+}
+
+/* Focus Effect */
+.custom-post-task-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
