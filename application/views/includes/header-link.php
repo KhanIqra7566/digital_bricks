@@ -7,8 +7,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit.">
-	<meta name="keyword" content="bootstrap admin template">
+	<meta name="description" content="">
+	<meta name="keyword" content="">
 
 	<!--[ Favicon]-->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
