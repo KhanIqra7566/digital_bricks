@@ -15,3 +15,7 @@ $route['profile_update'] = 'Home/profile_update';
 $route['posted_task'] = 'Home/posted_task';
 $route['view_posted'] = 'Home/view_posted';
 $route['role_employment'] = 'Home/role_employment';
+$route['active_bids'] = 'Home/active_bids';
+$route['manage_tasks'] = 'Home/manage_tasks';
+$route['manage_bidders'] = 'Home/manage_bidders';
+$route['post_task'] = 'Home/post_task';

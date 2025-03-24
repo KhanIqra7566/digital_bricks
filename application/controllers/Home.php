@@ -64,5 +64,34 @@ class Home extends CI_Controller
         $this->load->view('includes/header-link', $data);
         $this->load->view('role_employment');
     }
+
+    public function active_bids(): void
+    {
+        $data['title'] = '';
+        $this->load->view('includes/header-link', $data);
+        $this->load->view('active-bids');
+    }
+
+
+    public function manage_bidders(): void
+    {
+        $data['title'] = '';
+        $this->load->view('includes/header-link', $data);
+        $this->load->view('manage-bidders');
+    }
+
+    public function manage_tasks(): void
+    {
+        $data['title'] = '';
+        $this->load->view('includes/header-link', $data);
+        $this->load->view('manage_tasks');
+    }
+
+    public function post_task(): void
+    {
+        $data['title'] = '';
+        $this->load->view('includes/header-link', $data);
+        $this->load->view('post-task');
+    }
 }
 
