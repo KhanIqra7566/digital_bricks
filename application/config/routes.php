@@ -27,4 +27,8 @@ $route['post-task'] = 'Home/post_task';
 // -------------Freelancer Dashboard -----------
 $route['registration'] = 'Freelancer/registration';
 $route['applied_task'] = 'Freelancer/applied_task';
+$route['available_task'] = 'Freelancer/available_task';
 $route['dashboard'] = 'Freelancer/dashboard';
+$route['freelancer_login'] = 'Freelancer/freelancer_login';
+$route['my_wallet'] = 'Freelancer/my_wallet';
+$route['freelancer_notification'] = 'Freelancer/freelancer_notification';
