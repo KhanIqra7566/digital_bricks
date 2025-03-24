@@ -19,4 +19,21 @@ class Freelancer extends CI_Controller
         $data['title'] = '';
         $this->load->view('freelancer/dashboard');
     }
+
+    public function freelancer_login(): void
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/freelancer_login');
+    }
+    public function my_wallet(): void
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/my_wallet');
+    }
+
+    public function freelancer_notification(): void
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/freelancer_notification');
+    }
 }
