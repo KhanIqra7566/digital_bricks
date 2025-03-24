@@ -1,4 +1,4 @@
-<<<<<<<<< Temporary merge branch 1
+
 <?php include('includes/header.php') ?>
 <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
 
