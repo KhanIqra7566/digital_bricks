@@ -14591,8 +14591,8 @@ fieldset:disabled .btn {
 
 .btn.btn-lg,
 .btn-group-lg>.btn {
-  padding: .89rem 1rem;
-  font-size: 1rem
+  padding: 11px;
+  font-size: 17px;
 }
 
 button:focus:not(:focus-visible) {
@@ -14730,7 +14730,7 @@ button:focus:not(:focus-visible) {
 
 .form-control.form-control-lg,
 .form-select.form-control-lg {
-  min-height: calc(1.5em + 1.8rem + 2px)
+  min-height: calc(0.5em + 1.8rem + 2px);
 }
 
 .form-control:disabled,
@@ -18505,7 +18505,9 @@ body.layout-border .rightbar {
   -webkit-animation: eliment-animation .3s ease-in-out .33333s;
   animation: eliment-animation .3s ease-in-out .33333s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 .li_animate>li:hover {
@@ -19913,7 +19915,7 @@ body.auth main .auth-aside {
 }
 
 body.auth main .auth-aside .login-img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   max-width: 100%
 }
 
@@ -20996,4 +20998,119 @@ input[type=number] {
   box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.1) !important;
   position: relative;
   z-index: 99
+}
+
+.btn.btn-outline-primary {
+  color: #ffffff;
+  border-color: var(--primary-color);
+  background: #00b8d6;
+  padding: 8px;
+}
+
+.btn.btn-outline-primary:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: #fff;
+  padding: 8px;
+}
+.login-h3{
+  margin-top: 32px;
+  padding: 44px;
+  font-weight: 600;
+  padding-bottom: 0;
+  font-size: 40px;
+  margin-bottom: 0;
+  color: #00b8d6;
+}
+.h1-register
+{
+  color: var(--bs-cyan);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+/* Manage Task Css--- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.page-body {
+  padding: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-time {
+  font-size: 14px;
+  color: #888;
+}
+
+.badge-expiring {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.btn-primary {
+  background-color: #3a57e8;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary i {
+  margin-right: 8px;
+}
+
+.info-box {
+  display: flex;
+  gap: 20px;
+}
+
+.info-box div {
+  text-align: center;
+}
+
+.info-box .value {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
 }

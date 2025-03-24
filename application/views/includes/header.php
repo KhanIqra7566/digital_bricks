@@ -25,25 +25,6 @@
 				</div>
 				<ul class="nav nav-tabs border-0 d-none d-xl-inline-flex" role="tablist">
 					<li class="nav-item" role="presentation">
-						<div class="btn-group border rounded-pill" role="group" aria-label="Button group with nested dropdown">
-							<div class="btn-group" role="group">
-								<button type="button" class="btn bg-transparent rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Select App</button>
-								<ul class="dropdown-menu p-2 p-xl-3 shadow rounded-4">
-									<li><a class="dropdown-item rounded-pill active" href="#">BVite Sass App</a></li>
-									<li><a class="dropdown-item rounded-pill" href="#">BGulp Web App</a></li>
-								</ul>
-							</div>
-							<button type="button" class="btn bg-transparent rounded-pill">
-								<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-									<path d="M9 12l6 0"></path>
-									<path d="M12 9l0 6"></path>
-								</svg>
-							</button>
-						</div>
-					</li>
-					<li class="nav-item" role="presentation">
 						<a href="my-profile.html" class="nav-link">
 							<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -327,16 +308,7 @@
 							</symbol>
 						</svg>
 					</li>
-					<!--[ Start:: theme setting ]-->
-					<li class="nav-item dropdown px-md-1">
-						<a class="dropdown-toggle gray-6" href="#offcanvas_setting" data-bs-toggle="offcanvas" aria-expanded="false" title="template setting">
-							<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-								<path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
-								<path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-							</svg>
-						</a>
-					</li>
+					
 					<li class="nav-item py-2 py-md-1 col-auto">
 						<div class="vr d-none d-sm-flex h-100 mx-sm-2"></div>
 					</li>
@@ -391,7 +363,6 @@
 						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body flex-column custom_scroll ps-4 ps-xl-0">
-						<h6 class="fl-title title-font ps-2 small text-uppercase text-muted" style="--text-color: var(--theme-color1)">Workspace</h6>
 						<ul class="list-unstyled mb-4 menu-list">
 							<li>
 								<a href="<?= base_url() ?>" aria-label="My Dashboard">
@@ -416,10 +387,10 @@
 									<span class="mx-2">My Task</span>
 								</a>
 								<ul class="collapse list-unstyled" id="MyProject">
-									<li><a href="analytics.html" aria-label="Analytics">Manage Tasks</a></li>
-									<li><a href="new-project.html" aria-label="New Project">Manage Bidders</a></li>
-									<li><a href="project-list.html" aria-label="Project List">My Active Bids </a></li>
-									<li><a href="project-grid.html" aria-label="Project Grid">Post a Task</a></li>
+									<li><a href="<?= base_url('manage_tasks') ?>" aria-label="Analytics">Manage Tasks</a></li>
+									<li><a href="<?= base_url('manage_bidders') ?>" aria-label="New Project">Manage Bidders</a></li>
+									<li><a href="<?= base_url('active_bids') ?>" aria-label="Project List">My Active Bids </a></li>
+									<li><a href="<?= base_url('post_task') ?>" aria-label="Project Grid">Post a Task</a></li>
 								</ul>
 							</li>
                             <li>
@@ -952,6 +923,7 @@
 				</div>
 			</div>
 		</aside>
+
 
 		<!-- start: page header area -->
 		<div class="px-md-4 px-2 py-2 page-header" data-bs-theme="none">

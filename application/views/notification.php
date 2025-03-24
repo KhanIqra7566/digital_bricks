@@ -17,16 +17,23 @@
                                             <small class="time">5:15PM</small>
                                         </a>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-truncate user-msg">Apply for web Developer</span>
+                                            <span class="text-truncate user-msg">Apply for Web Developer</span>
                                             <div class="d-flex align-items-center">
                                                 <i class="fa fa-star gray-3 me-2"></i>
                                                 <input class="form-check-input m-0" type="checkbox" value="option1">
                                             </div>
                                         </div>
-                                        <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
+                                        <span class="small text-muted">
+                                            It is a long established fact that a reader will be distracted by the readable content.
+                                        </span>
+                                        <br>
+                                        <span class="small text-muted">
+                                            <strong>Your application has been received and is under review.</strong> <!-- नया कंटेंट -->
+                                        </span>
                                     </div>
                                 </div>
                             </li>
+
                             <li class="list-group-item py-3">
                                 <div class="d-flex">
                                     <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
@@ -36,16 +43,23 @@
                                             <small class="time">5:15PM</small>
                                         </a>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-truncate user-msg">Apply for web Developer</span>
+                                            <span class="text-truncate user-msg">Apply for Web Developer</span>
                                             <div class="d-flex align-items-center">
                                                 <i class="fa fa-star gray-3 me-2"></i>
                                                 <input class="form-check-input m-0" type="checkbox" value="option1">
                                             </div>
                                         </div>
-                                        <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
+                                        <span class="small text-muted">
+                                            It is a long established fact that a reader will be distracted by the readable content.
+                                        </span>
+                                        <br>
+                                        <span class="small text-muted">
+                                            <strong>Your application has been received and is under review.</strong> <!-- नया कंटेंट -->
+                                        </span>
                                     </div>
                                 </div>
                             </li>
+
                             <li class="list-group-item py-3">
                                 <div class="d-flex">
                                     <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
@@ -55,16 +69,23 @@
                                             <small class="time">5:15PM</small>
                                         </a>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-truncate user-msg">Apply for web Developer</span>
+                                            <span class="text-truncate user-msg">Apply for Web Developer</span>
                                             <div class="d-flex align-items-center">
                                                 <i class="fa fa-star gray-3 me-2"></i>
                                                 <input class="form-check-input m-0" type="checkbox" value="option1">
                                             </div>
                                         </div>
-                                        <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
+                                        <span class="small text-muted">
+                                            It is a long established fact that a reader will be distracted by the readable content.
+                                        </span>
+                                        <br>
+                                        <span class="small text-muted">
+                                            <strong>Your application has been received and is under review.</strong> <!-- नया कंटेंट -->
+                                        </span>
                                     </div>
                                 </div>
                             </li>
+
                             <li class="list-group-item py-3">
                                 <div class="d-flex">
                                     <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
@@ -74,130 +95,23 @@
                                             <small class="time">5:15PM</small>
                                         </a>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-truncate user-msg">Apply for web Developer</span>
+                                            <span class="text-truncate user-msg">Apply for Web Developer</span>
                                             <div class="d-flex align-items-center">
                                                 <i class="fa fa-star gray-3 me-2"></i>
                                                 <input class="form-check-input m-0" type="checkbox" value="option1">
                                             </div>
                                         </div>
-                                        <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
+                                        <span class="small text-muted">
+                                            It is a long established fact that a reader will be distracted by the readable content.
+                                        </span>
+                                        <br>
+                                        <span class="small text-muted">
+                                            <strong>Your application has been received and is under review.</strong> <!-- नया कंटेंट -->
+                                        </span>
                                     </div>
                                 </div>
                             </li>
-                            <li class="list-group-item py-3">
-                                <div class="d-flex">
-                                    <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                    <div class="flex-grow-1 ms-3">
-                                        <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                            <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                            <small class="time">5:15PM</small>
-                                        </a>
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="text-truncate user-msg">Apply for web Developer</span>
-                                            <div class="d-flex align-items-center">
-                                                <i class="fa fa-star gray-3 me-2"></i>
-                                                <input class="form-check-input m-0" type="checkbox" value="option1">
-                                            </div>
-                                        </div>
-                                        <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item py-3">
-                            <div class="d-flex">
-                                <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                <div class="flex-grow-1 ms-3">
-                                    <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                        <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                        <small class="time">5:15PM</small>
-                                    </a>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="text-truncate user-msg">Apply for web Developer</span>
-                                        <div class="d-flex align-items-center">
-                                            <i class="fa fa-star gray-3 me-2"></i>
-                                            <input class="form-check-input m-0" type="checkbox" value="option1">
-                                        </div>
-                                    </div>
-                                    <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item py-3">
-                            <div class="d-flex">
-                                <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                <div class="flex-grow-1 ms-3">
-                                    <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                        <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                        <small class="time">5:15PM</small>
-                                    </a>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="text-truncate user-msg">Apply for web Developer</span>
-                                        <div class="d-flex align-items-center">
-                                            <i class="fa fa-star gray-3 me-2"></i>
-                                            <input class="form-check-input m-0" type="checkbox" value="option1">
-                                        </div>
-                                    </div>
-                                    <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item py-3">
-                            <div class="d-flex">
-                                <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                <div class="flex-grow-1 ms-3">
-                                    <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                        <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                        <small class="time">5:15PM</small>
-                                    </a>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="text-truncate user-msg">Apply for web Developer</span>
-                                        <div class="d-flex align-items-center">
-                                            <i class="fa fa-star gray-3 me-2"></i>
-                                            <input class="form-check-input m-0" type="checkbox" value="option1">
-                                        </div>
-                                    </div>
-                                    <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item py-3">
-                            <div class="d-flex">
-                                <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                <div class="flex-grow-1 ms-3">
-                                    <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                        <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                        <small class="time">5:15PM</small>
-                                    </a>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="text-truncate user-msg">Apply for web Developer</span>
-                                        <div class="d-flex align-items-center">
-                                            <i class="fa fa-star gray-3 me-2"></i>
-                                            <input class="form-check-input m-0" type="checkbox" value="option1">
-                                        </div>
-                                    </div>
-                                    <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item py-3">
-                            <div class="d-flex">
-                                <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
-                                <div class="flex-grow-1 ms-3">
-                                    <a href="javascript:void(0);" class="d-flex justify-content-between">
-                                        <small>Andrew Patrick<i class="fa fa-circle ms-1 status text-warning"></i></small>
-                                        <small class="time">5:15PM</small>
-                                    </a>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="text-truncate user-msg">Apply for web Developer</span>
-                                        <div class="d-flex align-items-center">
-                                            <i class="fa fa-star gray-3 me-2"></i>
-                                            <input class="form-check-input m-0" type="checkbox" value="option1">
-                                        </div>
-                                    </div>
-                                    <span class="small text-muted">it is a long established fact that a reader will be distracted by the readable content</span>
-                                </div>
-                            </div>
-                        </li>
+
                         </ul>
                     </div>
 
