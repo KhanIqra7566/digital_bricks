@@ -1,517 +1,617 @@
+<<<<<<<<< Temporary merge branch 1
 <?php include('includes/header.php') ?>
 <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
-    <div class="row g-3">
-    <div class="tab-pane fade" id="pills_tasks" role="tabpanel">
-								<ul class="row g-1 list-unstyled li_animate">
-									<li class="col-12 text-uppercase text-muted">
-										<div class="d-flex justify-content-between small">
-											<span>Assigned Tasks</span>
-											<a href="#" title="view all task">View All</a>
-										</div>
-									</li>
-									<li class="col-6">
-										<div class="card border-0">
-											<div class="card-body p-3">
-												<div class="fs-5 fw-bold"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="37" class="purecounter">0</span></div>
-												<span class="text-muted">Pending</span>
-											</div>
-										</div>
-									</li>
-									<li class="col-6">
-										<div class="card border-0">
-											<div class="card-body p-3">
-												<div class="fs-5 fw-bold"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="18" class="purecounter">0</span></div>
-												<span class="text-muted">Completed</span>
-											</div>
-										</div>
-									</li>
-									<li class="col-6">
-										<div class="card border-0">
-											<div class="card-body p-3">
-												<div class="fs-5 fw-bold"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="23" class="purecounter">0</span></div>
-												<span class="text-muted">On Hold</span>
-											</div>
-										</div>
-									</li>
-									<li class="col-6">
-										<div class="card border-0">
-											<div class="card-body p-3">
-												<div class="fs-5 fw-bold"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="12" class="purecounter">0</span></div>
-												<span class="text-muted">In Progress</span>
-											</div>
-										</div>
-									</li>
-									<li class="col-12">
-										<div class="card border-0">
-											<div class="card-header">
-												<h6 class="card-title mb-0">Tasks Analysis</h6>
-												<div class="dropdown card-action">
-													<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
-														<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-															<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
-															<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
-															<path d="M12 8h4v4"></path>
-															<path d="M16 8l-5 5"></path>
-														</svg>
-													</a>
-													<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
-														<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-															<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-															<path d="M8 12l0 .01"></path>
-															<path d="M12 12l0 .01"></path>
-															<path d="M16 12l0 .01"></path>
-														</svg>
-													</a>
-													<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
-														<div class="dropdown-divider"></div>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
-														<div class="dropdown-divider"></div>
-														<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
-													</div>
-												</div>
-											</div>
-											<div class="card-body pt-0">
-												<div id="Apex_TaskAssignin"></div>
-												<a href="#" title="view all task" class="btn btn-dark w-100">View My Task</a>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
+
+    <ul class="row g-3 list-unstyled">
+        <li class="col-xl-3 col-lg-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="avatar rounded-circle mx-auto mb-2">
+                        <i class="fa fa-check-circle fa-2x text-success"></i>
+                    </div>
+                    <h5 class="fw-normal text-success">Completed ✅</h5>
+                </div>
+            </div>
+        </li>
+
+        <li class="col-xl-3 col-lg-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="avatar rounded-circle mx-auto mb-2">
+                        <i class="fa fa-spinner fa-2x text-warning"></i>
+                    </div>
+                    <h5 class="fw-normal text-warning">In Progress 🔄</h5>
+                </div>
+            </div>
+        </li>
+
+        <li class="col-xl-3 col-lg-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="avatar rounded-circle mx-auto mb-2">
+                        <i class="fa fa-hourglass-half fa-2x text-info"></i>
+                    </div>
+                    <h5 class="fw-normal text-info">Pending ⏳</h5>
+                </div>
+            </div>
+        </li>
+
+        <li class="col-xl-3 col-lg-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="avatar rounded-circle mx-auto mb-2">
+                        <i class="fa fa-ban fa-2x text-danger"></i>
+                    </div>
+                    <h5 class="fw-normal text-danger">Not Started 🚧</h5>
+                </div>
+            </div>
+        </li>
+
 
         <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
 
             <table class="table table-hover custom-table mb-0 dataTable" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Project Name</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Assign</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Start Date</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Deadline</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Task</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Progress</th>
+                        <th class="fw-normal small text-muted text-uppercase" scope="col">Task Name</th>
+                        <th class="fw-normal small text-muted text-uppercase" scope="col">Assigned To</th>
+                        <th class="fw-normal small text-muted text-uppercase" scope="col">Due Date</th>
                         <th class="fw-normal small text-muted text-uppercase" scope="col">Status</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Action</th>
+                        <th class="fw-normal small text-muted text-uppercase" scope="col">Priority</th>
+                        <th class="fw-normal small text-muted text-uppercase" scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="project-details.html">Project Doughnut Dungeon</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar6.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>11 Jan 2023</td>
+                        <td>Project Doughnut Dungeon</td>
+                        <td>John Doe</td>
                         <td>10 Feb 2023</td>
-                        <td>12</td>
+                        <td><span class="badge bg-warning text-dark">Pending</span></td>
+                        <td><span class="badge bg-danger">High</span></td>
                         <td>
-                            <small class="text-muted">50 / 50</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-success">COMPLETED</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
+                            <button class="btn btn-success btn-sm">Accept</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><a href="project-details.html">Eleifend sodales donec congue fringilla</a></td>
+                        <td>Website Redesign</td>
+                        <td>Jane Smith</td>
+                        <td>15 Mar 2023</td>
+                        <td><span class="badge bg-primary">In Progress</span></td>
+                        <td><span class="badge bg-warning text-dark">Medium</span></td>
                         <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar3.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>15 Jan 2023</td>
-                        <td>10 Feb 2023</td>
-                        <td>45</td>
-                        <td>
-                            <small class="text-muted">50 / 50</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-warning">INACTIVE</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
+                            <button class="btn btn-success btn-sm">Accept</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><a href="project-details.html">Aliquam amet ullamcorper mus tincidunt</a></td>
+                        <td>App Development</td>
+                        <td>Michael Brown</td>
+                        <td>25 Apr 2023</td>
+                        <td><span class="badge bg-success">Completed</span></td>
+                        <td><span class="badge bg-secondary">Low</span></td>
                         <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar3.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar7.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>20 Jan 2023</td>
-                        <td>05 Feb 2023</td>
-                        <td>55</td>
-                        <td>
-                            <small class="text-muted">60 / 88</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-secondary">CANCELLED</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Consequat vehicula ante ultricies purus</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar3.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar7.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar8.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar9.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar3.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>21 Jan 2023</td>
-                        <td>11 Feb 2023</td>
-                        <td>85</td>
-                        <td>
-                            <small class="text-muted">32 / 50</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-warning">INACTIVE</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Venenatis litora letius nam nibh</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>22 Jan 2023</td>
-                        <td>12 Feb 2023</td>
-                        <td>74</td>
-                        <td>
-                            <small class="text-muted">40 / 50</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-info">ONGOING</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Nullam primis nec etiam erat</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar6.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>23 Jan 2023</td>
-                        <td>13 Feb 2023</td>
-                        <td>44</td>
-                        <td>
-                            <small class="text-muted">80 / 100</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-info">ONGOING</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Lorem ipsum dolor sit amet</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar6.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>25 Jan 2023</td>
-                        <td>05 Feb 2023</td>
-                        <td>45</td>
-                        <td>
-                            <small class="text-muted">50 / 75</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-info">ONGOING</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Placerat inceptos gravida convallis luctus</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar6.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar7.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar8.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>25 Jan 2023</td>
-                        <td>15 Feb 2023</td>
-                        <td>50</td>
-                        <td>
-                            <small class="text-muted">25 / 125</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-success">COMPLETED</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Odio magnis libero vehicula id duis eros</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar6.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>25 Jan 2023</td>
-                        <td>10 Feb 2023</td>
-                        <td>30</td>
-                        <td>
-                            <small class="text-muted">5 / 10</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-info">ONGOING</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="project-details.html">Lorem ipsum dolor sit amet dis sapien</a></td>
-                        <td>
-                            <div class="avatar-list avatar-list-stacked d-flex ps-2">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar4.jpg" data-bs-toggle="tooltip" title="Avatar">
-                                <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" data-bs-toggle="tooltip" title="Avatar">
-                            </div>
-                        </td>
-                        <td>26 Jan 2023</td>
-                        <td>23 Feb 2023</td>
-                        <td>78</td>
-                        <td>
-                            <small class="text-muted">25 / 100</small>
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge text-danger">CRITICAL</span>
-                        </td>
-                        <td>
-                            <a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-opacity="1" d="M4 9.5C3.60218 9.5 3.22064 9.34196 2.93934 9.06066C2.65804 8.77936 2.5 8.39782 2.5 8C2.5 7.60218 2.65804 7.22064 2.93934 6.93934C3.22064 6.65804 3.60218 6.5 4 6.5C4.39782 6.5 4.77936 6.65804 5.06066 6.93934C5.34196 7.22064 5.5 7.60218 5.5 8C5.5 8.39782 5.34196 8.77936 5.06066 9.06066C4.77936 9.34196 4.39782 9.5 4 9.5ZM8 9.5C7.60218 9.5 7.22064 9.34196 6.93934 9.06066C6.65804 8.77936 6.5 8.39782 6.5 8C6.5 7.60218 6.65804 7.22064 6.93934 6.93934C7.22064 6.65804 7.60218 6.5 8 6.5C8.39782 6.5 8.77936 6.65804 9.06066 6.93934C9.34196 7.22064 9.5 7.60218 9.5 8C9.5 8.39782 9.34196 8.77936 9.06066 9.06066C8.77936 9.34196 8.39782 9.5 8 9.5ZM12 9.5C11.6022 9.5 11.2206 9.34196 10.9393 9.06066C10.658 8.77936 10.5 8.39782 10.5 8C10.5 7.60218 10.658 7.22064 10.9393 6.93934C11.2206 6.65804 11.6022 6.5 12 6.5C12.3978 6.5 12.7794 6.65804 13.0607 6.93934C13.342 7.22064 13.5 7.60218 13.5 8C13.5 8.39782 13.342 8.77936 13.0607 9.06066C12.7794 9.34196 12.3978 9.5 12 9.5Z" />
-                                    <path fill-opacity="0.3" d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V14C15 14.2652 14.8946 14.5196 14.7071 14.7071C14.5196 14.8946 14.2652 15 14 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-4">
-                                <li><a class="dropdown-item rounded-pill" href="#">File Info</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Copy to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Move to</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Rename</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Block</a></li>
-                                <li><a class="dropdown-item rounded-pill" href="#">Delete</a></li>
-                            </ul>
+                            <button class="btn btn-success btn-sm" disabled>Accept</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
 
         </div>
+=========
+<!-- start: page body area -->
+		<div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
+			<div class="card mb-3">
+				<div class="card-body">
+					<div class="row g-4 li_animate">
+						<div class="col-xl-4 col-lg-4">
+							<span class="small">Welcome back!</span>
+							<h2 class="fw-bold mb-xl-5 mb-4">My Dashboard</h2>
+							<div class="d-flex align-items-start">
+								<img class="avatar lg rounded-circle border border-3" src="assets/images/profile_av.png" alt="avatar">
+								<div class="ms-3">
+									<h4 class="mb-0 text-gradient title-font">Hello, Michelle!</h4>
+									<span class="text-muted small">michelle.glover@bvite.com</span>
+									<p class="mb-0 mt-xl-4 mt-3 text-muted small">"Power up your web app with our sleek (Bvite) Bootstrap admin dashboard template.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+							<ul class="list-inline d-flex flex-column mb-0 ms-5 ms-sm-0 ps-4 ps-sm-0">
+								<li class="list-inline-item mb-4">
+									<span class="small text-muted">FY 2020<span class="ps-2 fa fa-caret-down">0.0%</span></span>
+									<h6 class="mb-0 mt-1"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-currency="$" data-purecounter-end="7921" class="purecounter">0</span></h6>
+								</li>
+								<li class="list-inline-item mb-4">
+									<span class="small text-muted">FY 2021<span class="ps-2 fa fa-caret-up text-success"> 12.0%</span></span>
+									<h6 class="mb-0 mt-1"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-currency="$" data-purecounter-end="15000" class="purecounter">0</span></h6>
+								</li>
+								<li class="list-inline-item mb-4">
+									<span class="small text-muted">FY 2022<span class="ps-2 fa fa-caret-down text-danger"> 3.4%</span></span>
+									<h6 class="mb-0 mt-1"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-currency="$" data-purecounter-end="12850" class="purecounter">0</span></h6>
+								</li>
+								<li class="list-inline-item">
+									<button type="button" class="btn btn-primary px-lg-3 py-lg-2">View Reports</button>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-8 col-sm-8">
+							<div id="apex-MyAnalytics" class="apex-extra-none"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="card p-3 px-4">
+						<div>Total Income</div>
+						<div class="py-4 m-0 text-center h2"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-currency="$" data-purecounter-end="6245" class="purecounter">0</span></div>
+						<div class="d-flex">
+							<small class="text-muted">This year</small>
+							<div class="ms-auto">22%</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="card p-3 px-4">
+						<div>Total Expense</div>
+						<div class="py-4 m-0 text-center h2"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-currency="$" data-purecounter-end="2145" class="purecounter">0</span></div>
+						<div class="d-flex">
+							<small class="text-muted">This year</small>
+							<div class="ms-auto">17%</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="card p-3 px-4">
+						<div>Meetings</div>
+						<div class="py-4 m-0 text-center h2"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="58" class="purecounter">0</span>
+						</div>
+						<div class="d-flex">
+							<small class="text-muted">This year</small>
+							<div class="ms-auto">34%</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="card p-3 px-4">
+						<div>Number of Events</div>
+						<div class="py-4 m-0 text-center h2"><span data-purecounter-start="0" data-purecounter-separator="," data-purecounter-end="267" class="purecounter">0</span>
+						</div>
+						<div class="d-flex">
+							<small class="text-muted">This year</small>
+							<div class="ms-auto">19%</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-8 col-xl-7 col-lg-12">
+					<div class="card">
+						<div class="card-header">
+							<h6 class="card-title">Sales Analytics</h6>
+							<div class="dropdown card-action">
+								<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
+										<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+										<path d="M12 8h4v4"></path>
+										<path d="M16 8l-5 5"></path>
+									</svg>
+								</a>
+								<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+										<path d="M8 12l0 .01"></path>
+										<path d="M12 12l0 .01"></path>
+										<path d="M16 12l0 .01"></path>
+									</svg>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div id="apex-SalesAnalytics"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-5 col-lg-6 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h6 class="card-title mb-0">Sales Revenue</h6>
+							<div class="dropdown card-action">
+								<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
+										<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+										<path d="M12 8h4v4"></path>
+										<path d="M16 8l-5 5"></path>
+									</svg>
+								</a>
+								<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+										<path d="M8 12l0 .01"></path>
+										<path d="M12 12l0 .01"></path>
+										<path d="M16 12l0 .01"></path>
+									</svg>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body custom_scroll" style="height: 320px;">
+							<table class="table table-hover mb-0">
+								<tbody>
+									<tr>
+										<td>
+											USA
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 78%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$6425</span></td>
+									</tr>
+									<tr>
+										<td>
+											Poland
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 62%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$5582</span></td>
+									</tr>
+									<tr>
+										<td>
+											Germany
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 48%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$4587</span></td>
+									</tr>
+									<tr>
+										<td>
+											Russia
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 35%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$2520</span></td>
+									</tr>
+									<tr>
+										<td>
+											Australia
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 30%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$1899</span></td>
+									</tr>
+									<tr>
+										<td>
+											Great Britain
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 22%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$1056</span></td>
+									</tr>
+									<tr>
+										<td>
+											Poland
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 62%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$5582</span></td>
+									</tr>
+									<tr>
+										<td>
+											Germany
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 48%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$4587</span></td>
+									</tr>
+									<tr>
+										<td>
+											Russia
+											<div class="progress mt-1" style="height: 2px;">
+												<div class="progress-bar bg-primary" style="width: 35%"></div>
+											</div>
+										</td>
+										<td class="text-end"><span class="text-muted">$2520</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h6 class="card-title mb-0">Customer rating</h6>
+							<div class="dropdown card-action">
+								<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
+										<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+										<path d="M12 8h4v4"></path>
+										<path d="M16 8l-5 5"></path>
+									</svg>
+								</a>
+								<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+										<path d="M8 12l0 .01"></path>
+										<path d="M12 12l0 .01"></path>
+										<path d="M16 12l0 .01"></path>
+									</svg>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body custom_scroll" style="height: 280px;">
+							<div class="d-flex align-items-center">
+								<div class="avatar rounded-circle no-thumbnail theme-color4 text-white"><i class="fa fa-star fa-lg"></i></div>
+								<h6 class="ms-3 mb-0">4.9 Rating </h6>
+							</div>
+							<div class="avatar-list avatar-list-stacked my-4 px-3">
+								<img class="avatar rounded-circle" src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" title="Avatar" alt="avatar">
+								<img class="avatar rounded-circle" src="assets/images/xs/avatar6.jpg" data-toggle="tooltip" title="Avatar" alt="avatar">
+								<img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" data-toggle="tooltip" title="Avatar" alt="avatar">
+								<img class="avatar rounded-circle" src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" title="Avatar" alt="avatar">
+								<span>+195K raters</span>
+							</div>
+							<p class="text-muted small mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</div>
+						<div class="card-footer py-2">
+							<a href="#" title="Rate Out Application">Rate Out Application<i class="fa fa-long-arrow-right ms-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h6 class="card-title mb-0">Employee Salary</h6>
+							<div class="dropdown card-action">
+								<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
+										<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+										<path d="M12 8h4v4"></path>
+										<path d="M16 8l-5 5"></path>
+									</svg>
+								</a>
+								<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+										<path d="M8 12l0 .01"></path>
+										<path d="M12 12l0 .01"></path>
+										<path d="M16 12l0 .01"></path>
+									</svg>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body py-1">
+							<div id="apex-EmployeeSalary"></div>
+						</div>
+						<div class="card-footer py-2">
+							<a href="#" title="my task">View report<i class="fa fa-long-arrow-right ms-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h6 class="card-title mb-0">Recent Sellers</h6>
+							<div class="dropdown card-action">
+								<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
+										<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+										<path d="M12 8h4v4"></path>
+										<path d="M16 8l-5 5"></path>
+									</svg>
+								</a>
+								<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
+									<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+										<path d="M8 12l0 .01"></path>
+										<path d="M12 12l0 .01"></path>
+										<path d="M16 12l0 .01"></path>
+									</svg>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body custom_scroll" style="height: 320px;">
+							<ul class="list-group list-group-flush user-list mb-0" role="tablist">
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Stephen McLean</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<div class="avatar rounded-circle no-thumbnail">FG</div>
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Friends Group</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar3.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Gordon Butler</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex active">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar4.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Barbara Kelly</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar5.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Robert Hammer</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar6.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Gordon Butler</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar7.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Rose Rivera</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Stephen McLean</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<div class="avatar rounded-circle no-thumbnail">RH</div>
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Robert Hammer</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar3.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Gordon Butler</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar4.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Barbara Kelly</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item b-dashed">
+									<a href="javascript:void(0);" class="d-flex">
+										<img class="avatar rounded-circle" src="assets/images/xs/avatar5.jpg" alt="">
+										<div class="flex-fill ms-3">
+											<h6 class="d-flex justify-content-between mb-0"><span>Robert Hammer</span></h6>
+											<span class="text-muted small">Customer ID#00222</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+>>>>>>>>> Temporary merge branch 2
 
     </div>
 </div>
 
-<?php include('includes/footer.php') ?>
-<script src="assets/bundles/libscripts.bundle.js"></script>
-<script src="assets/bundles/dataTables.bundle.js"></script>
 
-<script src="assets/js/main.js"></script>
-
-<script>
-    $(document).ready(function() {
-        $('.dataTable')
-            .addClass('nowrap')
-            .dataTable({
-                responsive: true,
-            });
-    });
-</script>
+<?php $this->load->view('includes/footer'); ?>
+<?php $this->load->view('includes/footer-link'); ?>
