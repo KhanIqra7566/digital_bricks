@@ -37,43 +37,31 @@
 			</div>
 
 			<div class="d-flex align-items-md-start align-items-center flex-column flex-md-row mt-4 w-100">
-				<img src="assets/images/profile_av.png" alt="" class="rounded-4">
+			<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" class="rounded-circle" width="90">
+
 				<div class="media-body ms-md-5 m-0 mt-4 mt-md-0 text-md-start text-center">
-					<h4 class="mb-1">Michelle Hughes</h4>
-					<p>brian-hughes@bvite.com</p>
-					<span class="text-muted">Looking for a sleek and modern admin template for your next project? Check out our brand new bootstrap admin template! 🚀</span>
+					<h4 class="mb-1">Rajesh Verma</h4>
+					<p>rajesh.verma@indianclient.com</p>
+					<span class="text-muted">Passionate about innovative web solutions for the Indian market. Looking to connect with creative minds! 🌟</span>
 
 					<!-- New Content Section -->
 					<div class="my-3">
-						<button class="btn btn-primary">Follow</button>
 						<button class="btn btn-dark">Message</button>
-						<button class="btn btn-success">Connect</button> <!-- New Button -->
+						<button class="btn btn-success">Connect</button> 
 					</div>
 
 					<div class="d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-md-start">
 						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">City</small>
-							<div class="fs-5">New York</div>
-						</div>
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Awards</small>
-							<div class="fs-5">13</div>
-						</div>
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
 							<small class="text-muted">Experience</small>
-							<div class="fs-5">10+</div>
+							<div class="fs-5">5+</div>
 						</div>
 						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
 							<small class="text-muted">Total Earnings</small>
-							<div class="fs-5">$8,705</div>
+							<div class="fs-5">₹6,50,000</div>
 						</div>
 						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Followers</small> <!-- New Content -->
-							<div class="fs-5">1.2K</div>
-						</div>
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Projects Completed</small> <!-- New Content -->
-							<div class="fs-5">48</div>
+							<small class="text-muted">Projects Completed</small> 
+							<div class="fs-5">35</div>
 						</div>
 					</div>
 				</div>
@@ -85,57 +73,37 @@
 				<div class="col-xl-8 col-lg-7">
 					<h4 class="card-title mb-0">Edit Profile</h4>
 					<div class="row g-3 my-3">
-						<div class="col-md-5">
+						<div class="col-12">
 							<label class="form-label small text-muted">Company</label>
-							<input type="text" class="form-control" disabled="" placeholder="Company" value="bvite">
+							<input type="text" class="form-control" disabled="" placeholder="Company" value="Tata Consultancy Services">
 						</div>
-						<div class="col-sm-6 col-md-3">
+						<div class="col-12">
 							<label class="form-label small text-muted">Username</label>
-							<input type="text" class="form-control" placeholder="Username" value="Michelle1212">
+							<input type="text" class="form-control" placeholder="Username" value="RajeshTech">
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-12">
 							<label class="form-label small text-muted">Email address</label>
 							<input type="email" class="form-control" placeholder="Email">
 						</div>
 						<div class="col-sm-6 col-md-6">
 							<label class="form-label small text-muted">First Name</label>
-							<input type="text" class="form-control" placeholder="Company" value="Jane">
+							<input type="text" class="form-control" placeholder="First Name" value="Rajesh">
 						</div>
 						<div class="col-sm-6 col-md-6">
 							<label class="form-label small text-muted">Last Name</label>
-							<input type="text" class="form-control" placeholder="Last Name" value="Pearson">
+							<input type="text" class="form-control" placeholder="Last Name" value="Verma">
 						</div>
 						<div class="col-md-12">
 							<label class="form-label small text-muted">Address</label>
-							<input type="text" class="form-control" placeholder="Home Address" value="455 S. Airport St. Moncks Corner">
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<label class="form-label small text-muted">City</label>
-							<input type="text" class="form-control" placeholder="City" value="New York">
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<label class="form-label small text-muted">Postal Code</label>
-							<input type="number" class="form-control" placeholder="ZIP Code">
-						</div>
-						<div class="col-md-5">
-							<label class="form-label small text-muted">Country</label>
-							<select class="form-control custom-select">
-								<option value="">USA</option>
-							</select>
-						</div>
-						<div class="col-md-12">
-							<label class="form-label small text-muted">About Me</label>
-							<textarea rows="5" class="form-control" placeholder="Here can be your description">Oh so, your weak rhyme You doubt I'll bother, reading into it I'll probably won't, left to my own devices But that's the difference in our opinions.</textarea>
+							<input type="text" class="form-control" placeholder="Address" value="Mumbai, Maharashtra">
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">Update Profile</button>
+					<button type="submit" class="update-profile">Update Profile</button>
 				</div>
-			</div> <!--[ .row end ]-->
+			</div> 
 		</div>
 	</div>
-
 </div>
 
-
-<?php include('includes/footer.php') ?>
-<?php include('includes/footer-link.php') ?>
+<?php include('includes/footer.php') ?>    
+<?php include('includes/footer-link.php') ?>  
