@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$config['base_url'] = 'http://localhost/digital_bricks/';
+$config['base_url'] = 'http://localhost/digital-bricks/';
 
 $config['index_page'] = '';
 
