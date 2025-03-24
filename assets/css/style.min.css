@@ -37866,7 +37866,8 @@ header .header-menu .dropdown-menu {
 }
 
 header .header-menu .dropdown-toggle {
-  padding: .4rem
+  padding: .4rem;
+  color: #2b9bad;
 }
 
 header .header-menu .dropdown-toggle:hover {
@@ -38655,4 +38656,16 @@ body {
 .p-manage-task{
   color: #05212e !important;
   font-size: 13px;
+}
+.owner-name{
+  text-align: center;
+  font-size: 11px;
+  margin: 0 auto;
+  padding-left: 42px;
+  margin-top: -4px;
+}
+
+.btn-view{
+  padding: 5px 30px 5px 30px !important;
+    background: #05212e !important;
 }
