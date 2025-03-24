@@ -13,6 +13,11 @@ class Freelancer extends CI_Controller
         $data['title'] = '';
         $this->load->view('freelancer/applied_task');
     }
+    public function available_task()
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/available_task');
+    }
 
     public function dashboard()
     {
