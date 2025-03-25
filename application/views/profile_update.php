@@ -1,109 +1,68 @@
 <?php include('includes/header.php') ?>
 <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
 	<div class="card border-0">
-		<div class="card-header bg-card pb-3">
-			<h6 class="card-title mb-0">My Profile</h6>
-			<div class="dropdown card-action">
-				<a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
-					<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M3 16m0 1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1z"></path>
-						<path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
-						<path d="M12 8h4v4"></path>
-						<path d="M16 8l-5 5"></path>
-					</svg>
-				</a>
-				<a href="#" class="dropdown-toggle after-none" data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
-					<svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
-						<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-						<path d="M8 12l0 .01"></path>
-						<path d="M12 12l0 .01"></path>
-						<path d="M16 12l0 .01"></path>
-					</svg>
-				</a>
-				<div class="dropdown-menu dropdown-menu-end shadow rounded-4 p-2">
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-share"></i>Share</a>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-pencil"></i>Rename</a>
-					<div class="dropdown-divider"></div>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-link"></i>Copy Link Address</a>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-folder"></i>Move to</a>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-copy"></i>Copy to</a>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-edit"></i>Make Private</a>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill"><i class="me-2 fa fa-download"></i>Download</a>
-					<div class="dropdown-divider"></div>
-					<a href="javascript:void(0)" class="dropdown-item rounded-pill card-options-remove" data-toggle="card-remove"><i class="me-2 fa fa-trash"></i>Delete</a>
-				</div>
-			</div>
-
-			<div class="d-flex align-items-md-start align-items-center flex-column flex-md-row mt-4 w-100">
-			<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" class="rounded-circle" width="90">
-
-				<div class="media-body ms-md-5 m-0 mt-4 mt-md-0 text-md-start text-center">
-					<h4 class="mb-1">Rajesh Verma</h4>
+		<div class="card-body p-md-4">
+			<div class="col-md-12 p-3">
+				<div class="text-center text-md-center mb-4">
+					<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" class="rounded-circle" width="120">
+					<h4 class="mt-3" style="color: #127e8f;">Rajesh Verma</h4>
 					<p>rajesh.verma@indianclient.com</p>
-					<span class="text-muted">Passionate about innovative web solutions for the Indian market. Looking to connect with creative minds! 🌟</span>
-
-					<!-- New Content Section -->
-					<div class="my-3">
-						<button class="btn btn-dark">Message</button>
-						<button class="btn btn-success">Connect</button> 
-					</div>
-
-					<div class="d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-md-start">
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Experience</small>
+					<div class="d-flex flex-wrap justify-content-center justify-content-md-center">
+						<div class="rounded-2 py-2 px-3 me-2 mt-2 text-center" style="background: #00b8d65e">
+							<small>Experience</small>
 							<div class="fs-5">5+</div>
 						</div>
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Total Earnings</small>
+						<div class="rounded-2 py-2 px-3 me-2 mt-2 text-center" style="background: #00b8d65e">
+							<small>Total Earnings</small>
 							<div class="fs-5">₹6,50,000</div>
 						</div>
-						<div class="bg-body rounded-2 py-2 px-3 me-1 mt-1">
-							<small class="text-muted">Projects Completed</small> 
+						<div class="rounded-2 py-2 px-3 me-2 mt-2 text-center" style="background: #00b8d65e">
+							<small>Projects Completed</small>
 							<div class="fs-5">35</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="card-body border-top">
-			<div class="row g-4">
-				<div class="col-xl-8 col-lg-7">
-					<h4 class="card-title mb-0">Edit Profile</h4>
-					<div class="row g-3 my-3">
+				<div class="p-3">
+					<h4 class="mb-3 edit-profile">Bricks Creation (Task Creation)</h4>
+					<div class="row">
 						<div class="col-12">
-							<label class="form-label small text-muted">Company</label>
-							<input type="text" class="form-control" disabled="" placeholder="Company" value="Tata Consultancy Services">
+							<label class="form-label small text-muted">About Us</label>
+							<textarea class="form-control editor" rows="5"></textarea>
 						</div>
-						<div class="col-12">
-							<label class="form-label small text-muted">Username</label>
-							<input type="text" class="form-control" placeholder="Username" value="RajeshTech">
+						<div class="col-12 mt-3">
+							<label class="form-label small text-muted">Mission</label>
+							<textarea class="form-control" rows="3" placeholder="Enter detailed mission"></textarea>
 						</div>
-						<div class="col-12">
-							<label class="form-label small text-muted">Email address</label>
-							<input type="email" class="form-control" placeholder="Email">
+						<div class="col-12 mt-3">
+							<label class="form-label small text-muted">Vision</label>
+							<textarea class="form-control" rows="3" placeholder="Enter detailed vision"></textarea>
 						</div>
-						<div class="col-sm-6 col-md-6">
-							<label class="form-label small text-muted">First Name</label>
-							<input type="text" class="form-control" placeholder="First Name" value="Rajesh">
+
+
+						<div class="col-6 mt-3">
+							<label class="form-label small text-muted">Company Valuation</label>
+							<input type="text" class="form-control" placeholder="Enter valuation">
 						</div>
-						<div class="col-sm-6 col-md-6">
-							<label class="form-label small text-muted">Last Name</label>
-							<input type="text" class="form-control" placeholder="Last Name" value="Verma">
-						</div>
-						<div class="col-md-12">
-							<label class="form-label small text-muted">Address</label>
-							<input type="text" class="form-control" placeholder="Address" value="Mumbai, Maharashtra">
+						<div class="col-6 mt-3">
+							<label class="form-label small text-muted">Equity Dilution</label>
+							<input type="text" class="form-control" placeholder="Enter dilution percentage">
 						</div>
 					</div>
-					<button type="submit" class="update-profile">Update Profile</button>
+					<button type="submit" class="btn btn-primary mt-3">Save Changes</button>
 				</div>
-			</div> 
+			</div>
 		</div>
 	</div>
 </div>
 
-<?php include('includes/footer.php') ?>    
-<?php include('includes/footer-link.php') ?>  
+
+<?php include('includes/footer.php') ?>
+<?php include('includes/footer-link.php') ?>
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<script>
+	// Apply CKEditor to textareas
+	document.addEventListener("DOMContentLoaded", function() {
+		CKEDITOR.replaceAll('editor');
+	});
+</script>

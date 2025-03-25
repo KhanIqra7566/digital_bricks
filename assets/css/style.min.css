@@ -38669,3 +38669,37 @@ body {
   padding: 5px 30px 5px 30px !important;
     background: #05212e !important;
 }
+.h-68{
+  height: 68px;
+}
+.mt-50{
+  margin-top: -50px;
+}
+.task-name{
+  color: #077d90;
+  padding-bottom: 6px;
+}
+.bid-jobs{
+  background: #f0f0f0;
+  text-align: center;
+  color: #037689;
+  padding: 12px;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+.project-des{
+  color: #278fa0;
+  margin-top: 31px;
+}
+.view-post-name{
+  font-size: 25px;
+  color: #187483;
+  font-weight: 600;
+}
+
+.edit-profile{
+  padding: 11px;
+  text-align: center;
+  font-size: 17px;
+  background: #e9ecef80;
+}

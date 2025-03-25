@@ -1,9 +1,6 @@
 <script src="assets/bundles/libscripts.bundle.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/bundles/dataTables.bundle.js"></script>
-
-<script src="assets/js/main.js"></script>
-
 <script>
 	$(document).ready(function() {
 		$('.dataTable')
@@ -13,6 +10,7 @@
 			});
 	});
 </script>
+
 <script>
 	jQuery(function() {
 
@@ -193,7 +191,6 @@
 		});
 	});
 </script>
-
 </body>
 
 
