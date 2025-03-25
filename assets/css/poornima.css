@@ -70,3 +70,29 @@
     box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
 
+.icon-style {
+  cursor: pointer;
+  padding: 4px; /* Reduced padding */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px; /* Decreased icon size */
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.edit-icon:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.delete-icon:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
