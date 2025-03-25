@@ -38703,9 +38703,16 @@ body {
   font-size: 17px;
   background: #e9ecef80;
 }
-
+.w-49
+{
+  width: 49%;
+}
 @media (max-width: 991px) {
   .card {
     margin-bottom: 0;
   }
+  .w-49
+{
+  width: 100%;
+}
 }

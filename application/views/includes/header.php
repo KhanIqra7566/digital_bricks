@@ -147,7 +147,7 @@
 					<li class="nav-item user ms-3">
 						<a class="dropdown-toggle gray-6 d-flex text-decoration-none align-items-center lh-sm p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="User" data-bs-auto-close="outside">
 							<img class="avatar rounded-circle border border-3" src="assets/images/img/user.jpg" alt="avatar">
-							<span class="ms-2 fs-6 d-none d-sm-inline-flex">Digital Bricks</span>
+							<span class="ms-2 fs-6 d-sm-inline-flex">Digital Bricks</span>
 
 						</a>
 						<p class="owner-name">Rajesh Sharma</p>
