@@ -88,7 +88,10 @@
 <li class="col-lg-6 col-md-6">
         <div class="card">
             <div class="card-header flex-nowrap align-items-center">
-                <a href="#" class="h6 card-title mb-0">Website Redesign Project</a>
+            <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+    Website Redesign Project
+</a>
+
                 <div>
                     <a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
                         <svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -128,11 +131,16 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <p class="mb-1 text-muted small">Description:</p>
-                        Redesign a corporate website with a modern UI, responsive design, and improved accessibility.
-                    </div>
-                    <a href="#">View Details</a>
+                <div>
+    <p class="mb-1 text-muted small" style="font-size: 18px;">Description:</p>
+    <p style="font-size: 15px;">Redesign a corporate website with a modern, responsive UI and enhanced accessibility</p>
+</div>
+
+<a href="#" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
+    View Details
+</a>
+
+
                 </div>
                 
             </div>
@@ -143,7 +151,10 @@
     <li class="col-lg-6 col-md-6">
         <div class="card">
             <div class="card-header flex-nowrap align-items-center">
-                <a href="#" class="h6 card-title mb-0">Website Redesign Project</a>
+            <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+    Website Redesign Project
+</a>
+
                 <div>
                     <a href="#" class="card-fullscreen" data-bs-toggle="tooltip" title="Card Full Screen">
                         <svg class="svg-stroke" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -183,11 +194,16 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <p class="mb-1 text-muted small">Description:</p>
-                        Redesign a corporate website with a modern UI, responsive design, and improved accessibility.
-                    </div>
-                    <a href="#">View Details</a>
+                <div>
+    <p class="mb-1 text-muted small" style="font-size: 18px;">Description:</p>
+    <p style="font-size: 15px;">Redesign a corporate website with a modern, responsive UI and enhanced accessibility</p>
+</div>
+
+<a href="#" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
+    View Details
+</a>
+
+
                 </div>
                 
             </div>
