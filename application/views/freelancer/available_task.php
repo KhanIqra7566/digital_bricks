@@ -48,7 +48,7 @@
             <li class="col-lg-6 col-md-6">
                 <div class="card">
                     <div class="card-header flex-nowrap align-items-center">
-                        <a href="<?= base_url() ?>view_post" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                        <a href="<?= base_url() ?>view_bids" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
                             Website Redesign Project
                         </a>
                         <div>
@@ -94,7 +94,7 @@
                                 <p class="mb-1 text-muted small" style="font-size: 18px;">Description:</p>
                                 <p style="font-size: 15px;">Redesign a corporate website with a modern, responsive UI and enhanced accessibility</p>
                             </div>
-                            <a href="<?= base_url() ?>view_post" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
+                            <a href="<?= base_url() ?>view_bids" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
                                 View Details
                             </a>
                         </div>
@@ -106,7 +106,7 @@
             <li class="col-lg-6 col-md-6">
                 <div class="card">
                     <div class="card-header flex-nowrap align-items-center">
-                        <a href="<?= base_url() ?>view_post" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                        <a href="<?= base_url() ?>view_bids" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
                             Website Redesign Project
                         </a>
                         <div>
@@ -154,7 +154,7 @@
                                 <p style="font-size: 15px;">Redesign a corporate website with a modern, responsive UI and enhanced accessibility</p>
                             </div>
 
-                            <a href="<?= base_url() ?>view_post" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
+                            <a href="<?= base_url() ?>view_bids" class="btn btn-primary btn-sm" style="width: 100px; font-size: 10px; font-weight: bold; padding: 8px 4px; border-radius: 5px; text-align: center; display: inline-block;">
                                 View Details
                             </a>
                         </div>

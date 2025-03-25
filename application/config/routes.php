@@ -34,4 +34,4 @@ $route['my_wallet'] = 'Freelancer/my_wallet';
 $route['freelancer_notification'] = 'Freelancer/freelancer_notification';
 $route['ongoing_task'] = 'Freelancer/ongoing_task';
 $route['completed_task'] = 'Freelancer/completed_task';
-$route['view_post'] = 'Freelancer/view_post/';
+$route['view_bids'] = 'Freelancer/view_bids';

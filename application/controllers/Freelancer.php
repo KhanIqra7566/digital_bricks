@@ -53,10 +53,10 @@ class Freelancer extends CI_Controller
         $data['title'] = '';
         $this->load->view('freelancer/completed_task');
     }
-    public function view_post(): void
+    public function view_bids(): void
     {
         $data['title'] = '';
-        $this->load->view('freelancer/view_post');
+        $this->load->view('freelancer/view_bids');
     }
 
 }
