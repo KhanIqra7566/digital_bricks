@@ -2,109 +2,130 @@
 <?php $this->load->view('includes/freelancer_header'); ?>
 
 <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
+<form class="dropdown main-search me-md-4 w-50 d-none d-md-inline-flex">
+					<div class="w-100" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+						<svg class="svg-stroke search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+							<path d="M21 21l-6 -6"></path>
+						</svg>
+						<input type="text" class="form-control" placeholder="Search..." aria-label="Search...">
+					</div>
+					
+				</form>
 
-    <ul class="row g-3 list-unstyled">
-        <li class="col-xl-3 col-lg-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="avatar rounded-circle mx-auto mb-2">
-                        <i class="fa fa-check-circle fa-2x text-success"></i>
-                    </div>
-                    <h5 class="fw-normal text-success">Completed ✅</h5>
+
+    
+    <div class="row g-3" style="padding-top: 2rem;">
+
+        <div class="col-md-6">  
+            <div class="card position-relative">
+                <div class="position-absolute top-0 end-0 m-2 px-3 py-1 bg-warning text-dark rounded-pill d-flex align-items-center" style="font-size: 14px;">
+                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 7v5l3 3"></path>
+                        <path d="M5 12a7 7 0 1 1 14 0a7 7 0 1 1 -14 0"></path>
+                    </svg>
+                    <span>2 Days Left</span>
                 </div>
-            </div>
-        </li>
 
-        <li class="col-xl-3 col-lg-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="avatar rounded-circle mx-auto mb-2">
-                        <i class="fa fa-spinner fa-2x text-warning"></i>
-                    </div>
-                    <h5 class="fw-normal text-warning">In Progress 🔄</h5>
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                        Website Redesign Project
+                    </a>
                 </div>
-            </div>
-        </li>
-
-        <li class="col-xl-3 col-lg-6">
-            <div class="card text-center">
+                
                 <div class="card-body">
-                    <div class="avatar rounded-circle mx-auto mb-2">
-                        <i class="fa fa-hourglass-half fa-2x text-info"></i>
+                    <p class="mb-1 text-muted small">Description:</p>
+                    <p>Redesign a corporate website with a modern, responsive UI and enhanced accessibility.</p>
+
+                    <div class="hstack gap-3 mb-3">
+                        <div>
+                            <p class="mb-1 text-muted small">Payment:</p>
+                            <span class="fw-bold">₹1,200</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div>
+                            <p class="mb-1 text-muted small">Duration:</p>
+                            <span class="fw-bold">2 Weeks</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div>
+                            <p class="mb-1 text-muted small">Date Assigned:</p>
+                            <span class="fw-bold">22 March, 2025</span>
+                        </div>
                     </div>
-                    <h5 class="fw-normal text-info">Pending ⏳</h5>
-                </div>
-            </div>
-        </li>
-
-        <li class="col-xl-3 col-lg-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="avatar rounded-circle mx-auto mb-2">
-                        <i class="fa fa-ban fa-2x text-danger"></i>
-                    </div>
-                    <h5 class="fw-normal text-danger">Not Started 🚧</h5>
-                </div>
-            </div>
-        </li>
-
-
-        <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">
-
-            <table class="table table-hover custom-table mb-0 dataTable" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Task Name</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Assigned To</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Due Date</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Status</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Priority</th>
-                        <th class="fw-normal small text-muted text-uppercase" scope="col">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Project Doughnut Dungeon</td>
-                        <td>John Doe</td>
-                        <td>10 Feb 2023</td>
-                        <td><span class="badge bg-warning text-dark">Pending</span></td>
-                        <td><span class="badge bg-danger">High</span></td>
-                        <td>
-                            <button class="btn btn-success btn-sm">Accept</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Website Redesign</td>
-                        <td>Jane Smith</td>
-                        <td>15 Mar 2023</td>
-                        <td><span class="badge bg-primary">In Progress</span></td>
-                        <td><span class="badge bg-warning text-dark">Medium</span></td>
-                        <td>
-                            <button class="btn btn-success btn-sm">Accept</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>App Development</td>
-                        <td>Michael Brown</td>
-                        <td>25 Apr 2023</td>
-                        <td><span class="badge bg-success">Completed</span></td>
-                        <td><span class="badge bg-secondary">Low</span></td>
-                        <td>
-                            <button class="btn btn-success btn-sm" disabled>Accept</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-    </ul>
-
+                    <div class="d-flex justify-content-between align-items-center">
+    <p class="mb-1 text-muted small">Status:</p>
+    <button class="btn btn-primary btn-sm fw-bold px-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="me-1">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 6v6l3 3"></path>
+            <circle cx="12" cy="12" r="9"></circle>
+        </svg>
+        On Working
+    </button>
 </div>
 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">  
+            <div class="card position-relative">
+                <div class="position-absolute top-0 end-0 m-2 px-3 py-1 bg-warning text-dark rounded-pill d-flex align-items-center" style="font-size: 14px;">
+                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 7v5l3 3"></path>
+                        <path d="M5 12a7 7 0 1 1 14 0a7 7 0 1 1 -14 0"></path>
+                    </svg>
+                    <span>2 Days Left</span>
+                </div>
+
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                        Website Redesign Project
+                    </a>
+                </div>
+                
+                <div class="card-body">
+                    <p class="mb-1 text-muted small">Description:</p>
+                    <p>Redesign a corporate website with a modern, responsive UI and enhanced accessibility.</p>
+
+                    <div class="hstack gap-3 mb-3">
+                        <div>
+                            <p class="mb-1 text-muted small">Payment:</p>
+                            <span class="fw-bold">₹1,200</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div>
+                            <p class="mb-1 text-muted small">Duration:</p>
+                            <span class="fw-bold">2 Weeks</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div>
+                            <p class="mb-1 text-muted small">Date Assigned:</p>
+                            <span class="fw-bold">22 March, 2025</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+    <p class="mb-1 text-muted small">Status:</p>
+    <button class="btn btn-success btn-sm fw-bold px-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="me-1">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 12l5 5l10 -10"></path>
+        </svg>
+        Accepted
+    </button>
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php $this->load->view('includes/footer'); ?>
 <?php $this->load->view('includes/footer-link'); ?>
