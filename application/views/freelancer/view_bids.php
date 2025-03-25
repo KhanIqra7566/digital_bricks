@@ -1,4 +1,5 @@
-<?php include('includes/header.php') ?>
+<?php $this->load->view('includes/header-link'); ?>
+<?php $this->load->view('includes/freelancer_header'); ?>
 <style>
     .bid-card {
         /* max-width: 400px; */
@@ -98,7 +99,7 @@
                     <div class="card" style="box-shadow: none;">
                         <h4 class="fw-bold project-des">Project Description</h4>
                         <p class="text-black" style="text-align: justify;font-size: 15px;">
-                            We are seeking a skilled professional to develop a high-quality, scalable solution that meets our specific requirements.
+                        We are seeking a skilled professional to develop a high-quality, scalable solution that meets our specific requirements. 
                         </p>
                         <h5 class="fw-bold mt-3 mb-4">Attachments</h5>
                         <ul class="list-unstyled d-flex flex-wrap">

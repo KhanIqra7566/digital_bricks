@@ -11,11 +11,12 @@
             </svg>
             <input type="text" class="form-control" placeholder="Search..." aria-label="Search...">
         </div>
+
     </form>
 
 
-    <div class="row g-3" style="padding-top: 2rem;">
 
+    <div class="row g-3" style="padding-top: 2rem;">
         <div class="col-md-6">
             <div class="card position-relative">
                 <div class="position-absolute top-0 end-0 m-2 px-3 py-1 bg-warning text-dark rounded-pill d-flex align-items-center" style="font-size: 14px;">
@@ -28,7 +29,7 @@
                 </div>
 
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                    <a href="javascript:void(0);" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
                         Website Redesign Project
                     </a>
                 </div>
@@ -39,8 +40,9 @@
 
                     <div class="hstack gap-3 mb-3">
                         <div>
-                            <p class="mb-1 text-muted small">Payment:</p>
+                            <p class="mb-1 text-muted small">Bids:</p>
                             <span class="fw-bold">₹1,200</span>
+                            <p class="d-inline">/weeks</p>
                         </div>
                         <div class="vr"></div>
                         <div>
@@ -82,7 +84,7 @@
                 </div>
 
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <a href="#" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
+                    <a href="javascript:void(0);" class="card-title mb-0 text-primary fw-bold" style="font-size: 18px; text-decoration: none;">
                         Website Redesign Project
                     </a>
                 </div>
@@ -93,8 +95,9 @@
 
                     <div class="hstack gap-3 mb-3">
                         <div>
-                            <p class="mb-1 text-muted small">Payment:</p>
+                            <p class="mb-1 text-muted small">Bids:</p>
                             <span class="fw-bold">₹1,200</span>
+                            <p class="d-inline">/weeks</p>
                         </div>
                         <div class="vr"></div>
                         <div>
