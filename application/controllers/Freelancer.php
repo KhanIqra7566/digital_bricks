@@ -41,4 +41,20 @@ class Freelancer extends CI_Controller
         $data['title'] = '';
         $this->load->view('freelancer/freelancer_notification');
     }
+
+    public function ongoing_task(): void
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/ongoing_task');
+    }
+
+    public function completed_task(): void
+    {
+        $data['title'] = '';
+        $this->load->view('freelancer/completed_task');
+    }
+
+
 }
+
+

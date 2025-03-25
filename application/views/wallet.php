@@ -75,9 +75,9 @@
 				</td>
 				<td>$122.00</td>
 				<td>
-				<a href="<?= base_url() ?>view_posted">
-							<button class="btn btn-success btn-sm btn-view">View</button>
-						</a>
+					<a href="<?= base_url() ?>view_posted">
+						<button class="btn btn-success btn-sm btn-view">View</button>
+					</a>
 				</td>
 			</tr>
 		</tbody>

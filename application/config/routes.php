@@ -32,3 +32,5 @@ $route['dashboard'] = 'Freelancer/dashboard';
 $route['freelancer_login'] = 'Freelancer/freelancer_login';
 $route['my_wallet'] = 'Freelancer/my_wallet';
 $route['freelancer_notification'] = 'Freelancer/freelancer_notification';
+$route['ongoing_task'] = 'Freelancer/ongoing_task';
+$route['completed_task'] = 'Freelancer/completed_task';
